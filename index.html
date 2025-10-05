@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Интернет-магазин</title>
+  </head>
+  <body>
+    <header>
+      <h1>Одежда</h1>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Поиск..." />
+      </div>
+      <div class="icons">
+        <button aria-label="Домой" class="footer-btn home-btn"><span>🏠</span><span></span></button>
+        <button aria-label="Избранное" class="footer-btn"><span>❤️</span><span></span></button>
+        <button aria-label="Корзина" class="footer-btn"><span>🛒</span><span></span></button>
+      </div>
+    </header>
+    <main>
+      <section class="category" id="category-men">
+        <h2>Мужская</h2>
+        <div class="card-grid" id="men-cards">
+          <article class="card">999 P <span>Лонг</span> <button>В корзину</button></article>
+          <article class="card">1099 P <span>Футболка серая</span> <button>В корзину</button></article>
+          <article class="card">1199 P <span>Худи с карманом</span> <button>В корзину</button></article>
+          <article class="card">1099 P <span>Худи черное</span> <button>В корзину</button></article>
+        </div>
+      </section>
+      <section class="category" id="category-women">
+        <h2>Женская</h2>
+        <div class="card-grid" id="women-cards">
+          <article class="card">999 P <span>Худи розовое</span> <button>В корзину</button></article>
+          <article class="card">1099 P <span>Футболка спортивная</span> <button>В корзину</button></article>
+          <article class="card">1199 P <span>Худи белое</span> <button>В корзину</button></article>
+          <article class="card">1099 P <span>Майка</span> <button>В корзину</button></article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© 2025 Магазин | Контакты | О нас | Соцсети</p>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
