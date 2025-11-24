@@ -1,45 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/style.css" />
-    <title>Интернет-магазин</title>
-  </head>
-  <body>
-    <header>
-      <h1>Одежда</h1>
-      <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Поиск..." />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Онлайн-магазин</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav-desktop">
+      <button aria-label="Домой" class="home-btn">🏠</button>
+      <input type="text" id="searchInput" placeholder="Поиск...">
+      <div class="header-icons">
+        <button aria-label="Избранное">❤️</button>
+        <button aria-label="Корзина">🛒</button>
       </div>
-      <div class="icons">
-        <button aria-label="Домой" class="footer-btn home-btn"><span>🏠</span><span></span></button>
-        <button aria-label="Избранное" class="footer-btn"><span>❤️</span><span></span></button>
-        <button aria-label="Корзина" class="footer-btn"><span>🛒</span><span></span></button>
+    </nav>
+    <nav class="nav-mobile">
+      <input type="text" id="searchInputMobile" placeholder="Поиск...">
+    </nav>
+  </header>
+  <main>
+    <section class="category" id="hoodies">
+      <h2>Худи</h2>
+      <div class="cards" id="hoodiesCards"></div>
+    </section>
+    <section class="category" id="shorts">
+      <h2>Шорты</h2>
+      <div class="cards" id="shortsCards"></div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-desktop">
+        <p>© 2025 Магазин | <a href="/privacy">Политика и безопасность</a> | <a href="/cookies">Cookie</a></p>
       </div>
-    </header>
-    <main>
-      <section class="category" id="category-men">
-        <h2>Мужская</h2>
-        <div class="card-grid" id="men-cards">
-          <article class="card">999 P <span>Лонг</span> <button>В корзину</button></article>
-          <article class="card">1099 P <span>Футболка серая</span> <button>В корзину</button></article>
-          <article class="card">1199 P <span>Худи с карманом</span> <button>В корзину</button></article>
-          <article class="card">1099 P <span>Худи черное</span> <button>В корзину</button></article>
-        </div>
-      </section>
-      <section class="category" id="category-women">
-        <h2>Женская</h2>
-        <div class="card-grid" id="women-cards">
-          <article class="card">999 P <span>Худи розовое</span> <button>В корзину</button></article>
-          <article class="card">1099 P <span>Футболка спортивная</span> <button>В корзину</button></article>
-          <article class="card">1199 P <span>Худи белое</span> <button>В корзину</button></article>
-          <article class="card">1099 P <span>Майка</span> <button>В корзину</button></article>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <p>© 2025 Магазин | Контакты | О нас | Соцсети</p>
-    </footer>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+      <div class="footer-mobile">
+        <button aria-label="Домой" class="footer-btn home-btn"><span>🏠</span><span>Главная</span></button>
+        <button aria-label="Избранное" class="footer-btn"><span>❤️</span><span>Избранное</span></button>
+        <button aria-label="Корзина" class="footer-btn"><span>🛒</span><span>Корзина</span></button>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
